@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoom Project Notes</title>
+</head>
+<body>
+    <h4>Sockets</h4>
+    <ul>
+        <li>a socket is an endpoint for sending or receiving data across a computer network. It is a combination of an IP address and a port number, which together uniquely identify a connection between two devices.</li>
+        <li>sockets are used to communicate between a client and a server</li>
+        <li>IP Address: This is the address of the device on the network.<br>
+            Port Number: This is a specific endpoint on the device for communication.</li>
+    </ul>
+
+    <h4>Protocols</h4>
+    <ul>
+        <li>Protocols are a set of rules and conventions for communication between network devices. They ensure that data is transmitted accurately and reliably.</li>
+        <li><b>( Transmition Control Protcols )TCP </b>:- It is one of the main protocols of the Internet Protocol (IP) suite. TCP provides reliable, ordered, and error-checked delivery of a stream of data between applications running on hosts communicating via an IP network. </li>
+        <li><b>( User Datagram Protocol )UDP </b>:- It is one of the core members of the Internet Protocol (IP) suite. Using UDP, programs on networked computers can send short messages sometimes known as datagrams (using Datagram Sockets) to one another. </li>
+        <li><b>WebRTC (Real time communicate):- </b>It is a Protocol tha help us to direcly communicate with client to client. Without any  Middleware(server).</li>
+        <li>WebRTC is a free, open-source project that provides web browsers and mobile applications with real-time communication via simple application programming interfaces (APIs). It allows audio and video communication to work inside web pages by allowing direct peer-to-peer communication, eliminating the need to install plugins or download native apps.</li>
+    </ul>
+
+    <h4>Working Of WebRTC :- </h4>
+    <ul>
+        <li>
+            Steps 1 :- Signaling :- It is the process of coordinating communication between WebRTC clients. It is not defined by the WebRTC standard, so you can use any technology you like to implement it.<br>
+            Steps 2 :- ICE (Interactive Connectivity Establishment) :- It is a framework to allow your web browser to connect with peers. It is a collection of protocols that help WebRTC clients discover and connect with each other.<br>
+            Steps 3 :- Security (DLTS & SRTP) :- It is a protocol that encrypts and secures the data that is sent between WebRTC clients.<br>
+            Steps 4 :- NAT Traversal :- It is a technique that helps WebRTC clients to connect with each other even if they are behind a NAT (Network Address Translation) router.
+        </li>
+    </ul>
+
+    <h4>WebRTC API</h4>
+    <ul>
+        <li>
+            
+            WebRTC (Web Real-Time Communication) is a technology that enables peer-to-peer audio, video, and data sharing between browsers without requiring an intermediary server. It is commonly used for applications such as:<br>
+            
+            - Video conferencing<br>
+            - Voice calls<br>
+            - File sharing<br>
+            - Real-time chat applications<br>
+            - Online gaming<br>
+            
+            The WebRTC API provides several key components:<br>
+            
+            1. `RTCPeerConnection`: Manages the connection between peers, handling the negotiation of the connection and the transmission of media and data.<br>
+            2. `RTCDataChannel`: Enables the transmission of arbitrary data directly between peers.<br>
+            3. `getUserMedia()`: Captures audio and video from the user's device.<br>
+            4. `RTCIceCandidate`: Represents a candidate network path for connecting peers.<br>
+            5. `RTCSessionDescription`: Describes one end of a connection, including the media format and network information.<br>
+            
+            Example use cases:<br>
+            - Building a video chat application where users can see and hear each other in real-time.<br>
+            - Creating a multiplayer game that requires real-time data exchange between players.<br>
+            - Developing a file-sharing service that allows users to send files directly to each other without uploading to a server.<br>
+    
+        </li>
+    </ul>
+
+    <h4>WebRTC Architectutes</h4>
+
+    <ul>
+        <li>(pear to pear)P2P :- direcly Communication with the client Machine.</li>
+        <li>SFU(Selective Forwarding Units) :- Communication withe the help of server.</li>
+        <li>MCU (Multi Point Control Units ):- An MCU (Multipoint Control Unit) is a server that facilitates multipoint video conferencing by managing the connections between multiple participants. It acts as a central hub that receives video and audio streams from each participant, processes them, and then redistributes the combined streams back to all participants. This allows multiple users to communicate in a single session, even if they are on different networks or using different devices.</li>
+    </ul>
+
+    <h4>Packeges Used in Project</h4>
+    <ul>
+        <li>bcrypt :- bcrypt is a popular npm package used for hashing passwords. <br>
+            It provides a way to securely store passwords by generating a salt and hashing the password with it.<br>
+            This makes it difficult for attackers to retrieve the original password even if they gain access to the hashed password.
+        </li>
+        <li>http-status :- http-status is an npm package that provides utility functions for working with HTTP status codes. It includes constants for all standard HTTP status codes, making it easier to work with them in your application. For example, instead of using magic numbers like 404 or 500, you can use descriptive constants like `httpStatus.NOT_FOUND` or `httpStatus.INTERNAL_SERVER_ERROR`.
+        </li>
+        <li>socket.io :- socket.io is a JavaScript library for real-time web applications. It enables real-time, bidirectional communication between web clients and servers. It consists of a client-side library that runs in the browser and a server-side library for Node.js.</li>
+        
+    </ul>
+</body>
+</html>

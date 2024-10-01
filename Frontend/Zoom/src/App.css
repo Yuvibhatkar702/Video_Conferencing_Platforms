@@ -1,0 +1,235 @@
+.landingPageContainer{
+  height: 100vh;
+  width: 100vw;
+  background: url("/public/landingPage_bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+}
+
+.landingPageContainer nav{
+  padding-inline: 2rem;
+  padding-block: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.landingPageContainer nav h1{
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif; 
+}
+
+.landingPageContainer nav .list{
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.landingPageContainer nav .list a{
+  color: black;
+  text-decoration: none;
+}
+
+.landingMainContainer{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.landingMainContainer > div:nth-child(1){
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.landingMainContainer > div:nth-child(1) p{
+  font-size: 1.6rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.landingMainContainer > div:nth-child(1) button{
+  background-color: #C2B97F;
+  height: 2.9rem;
+  width: 10rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.2rem;
+  color: #FFFFFC;
+  font-weight: bold;
+  margin-top: 0.9rem;
+  cursor: pointer;
+}
+
+.landingMainContainer > dev:nth-child(2){
+  width: 12rem;
+}
+
+.landingMainContainer > div:nth-child(2) img {
+  height: 30rem;
+  width: auto;
+}
+
+@media(max-width:450px){
+  .landingMainContainer{
+    flex-wrap: wrap;
+  }
+
+  .landingMainContainer > div:nth-child(1){
+    text-align: center;
+  }
+
+  .landingPageContainer nav{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .landingPageContainer nav .list{
+    margin-top: 1rem;
+  }
+}
+
+
+body {
+  background-color: #d8d3cb;
+}
+
+.start{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+    width: 60vh;
+    height: 80vh;
+    background-color: white;
+    border: 1px solid black;
+    padding: 3vh 3vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+#text {
+    height: 4vh;
+    width: 40vh;
+    margin-top: 3vh;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 16px;
+}
+
+::placeholder {
+    font-size: 14px;
+}
+
+fieldset {
+    display: flex;
+    width: 41vh;
+    height: 8vh;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+#dob {
+    width: 23vh;
+    height: 5vh;
+    margin-top: 1vh;
+}
+
+button{
+    height: 2.5rem;
+    width: 6rem;
+    border-radius: 10px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 0.5rem; 
+}
+
+.login{
+  display: flex;
+  justify-content: right;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 400px;
+    height: 380px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20vh 32vh;
+    justify-content: center;
+}   
+
+h3{
+    font-family: "Roboto Slab", serif;
+    font-size: 30px;
+}
+
+p{
+    font-family: "Montserrat", sans-serif;
+}
+
+#text{
+    height: 44px;
+    width: 360px;
+    margin-top: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 16   px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button{
+    height: 50px;
+    width: 360px;
+    border-radius: 10px;
+    border: none;
+    background-color:#C2B97F;
+    color: white;
+    font-weight: bold;
+    margin-top: 14px;
+    margin-bottom: 18px;
+    cursor: pointer;
+}
+
+a{
+    color: rgb(49, 49, 129);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+hr{
+    color: black;
+    width: 50vh;
+    margin-top: 5vh;
+}
+
+#new{
+    width:240px;
+    background-color: green;
+}
+
+::placeholder{
+    font-size: 16px;
+}
+
+@media(width: 412px){
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
