@@ -212,8 +212,13 @@ a{
 
 hr{
     color: black;
-    width: 50vh;
+    width: 61.5vh;
     margin-top: 5vh;
+}
+
+#btn{
+  width: 8vw;
+  height: 5vh;
 }
 
 #new{
